@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.featured-grid{
+    @apply         pt-5
+    md:pt-10
+    px-20
+    grid
+    md:grid-cols-6 md:gap-20
+    grid-cols-2
+    gap-10;
+}
+
+.featured-card-inner{
+    @apply             bg-gray-200
+    rounded-full
+    md:h-48 md:w-48
+    h-24
+    w-24
+    border-2 border-gray-300
+    overflow-hidden;
+}
+
+.filter-button{
+    @apply mr-2 h-5 w-5 border-2 border-black bg-white transition duration-200 appearance-none cursor-pointer focus:ring-0 focus:bg-white focus:text-black checked:bg-black checked:hover:bg-black
+}
+
+.all-products-grid{
+    @apply grid md:grid-cols-4 md:gap-10 grid-cols-2 gap-5
+}
+
+.product-name-p{
+    @apply truncate antialiased capitalize font-medium hover:text-clip;
+}
+
+.drop-down-button{
+    @apply        text-black
+    bg-white
+    hover:bg-white
+    border-2 border-black
+    md:text-sm
+    text-xs
+    md:px-4
+    px-2
+    md:py-2.5
+    py-2
+    text-center
+    inline-flex
+    items-center
+    ml-auto
+}
+
+.drop-down-menu{
+    @apply bg-white mt-1 py-1 absolute shadow-2xl font-light hidden
+}
+
+.form-label{
+    @apply block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300
+}
+
+.form-input{
+    @apply bg-gray-50
+    border
+    text-gray-900 text-sm
+    rounded-lg
+    focus:border-black
+    block
+    w-full
+    p-2.5
+    mb-1
+}
+
+.form-submit-button{
+    @apply
+    text-white
+    bg-red-700
+    hover:bg-red-800
+    font-medium
+    rounded
+    text-sm
+    px-5
+    py-2.5
+    text-center
+    mt-2
+}
